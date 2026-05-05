@@ -1,0 +1,47 @@
+2025-02-04 18:01:54.110 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-04 18:01:54.196 +05:30 [INF] Now listening on: http://localhost:5247
+2025-02-04 18:01:54.198 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-04 18:01:54.198 +05:30 [INF] Hosting environment: Development
+2025-02-04 18:01:54.198 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-02-04 18:02:12.105 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-02-04 18:02:12.149 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-02-04 18:02:12.183 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-04 18:02:12.212 +05:30 [INF] Route matched with {action = "index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult index() on controller MVC_MobileStockManagementApplication.Controllers.LoginController (MVC_MobileStockManagementApplication).
+2025-02-04 18:02:12.233 +05:30 [INF] Executing ViewResult, running view index.
+2025-02-04 18:02:12.431 +05:30 [INF] Executed ViewResult - view index executed in 209.5718ms.
+2025-02-04 18:02:12.447 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication) in 234.1279ms
+2025-02-04 18:02:12.447 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-04 18:02:12.451 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - null null
+2025-02-04 18:02:12.452 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 200 null text/html; charset=utf-8 350.6887ms
+2025-02-04 18:02:12.460 +05:30 [INF] The file /MVC_MobileStockManagementApplication.styles.css was not modified
+2025-02-04 18:02:12.461 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - 304 null text/css 13.1414ms
+2025-02-04 18:02:12.664 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-04 18:02:12.664 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/js/apiService.js - null null
+2025-02-04 18:02:12.668 +05:30 [INF] The file /js/apiService.js was not modified
+2025-02-04 18:02:12.668 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.3302ms
+2025-02-04 18:02:12.668 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/js/apiService.js - 304 null text/javascript 3.6775ms
+2025-02-04 18:02:15.129 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/ - null null
+2025-02-04 18:02:15.130 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-04 18:02:15.133 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-02-04 18:02:15.138 +05:30 [INF] login done and home page loaded
+2025-02-04 18:02:15.171 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-04 18:02:15.175 +05:30 [INF] Executed ViewResult - view Index executed in 5.2867ms.
+2025-02-04 18:02:15.175 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 42.379ms
+2025-02-04 18:02:15.175 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-04 18:02:15.175 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/ - 200 null text/html; charset=utf-8 46.5434ms
+2025-02-04 18:02:15.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-04 18:02:15.181 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.502ms
+2025-02-04 18:02:47.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/ - null null
+2025-02-04 18:02:47.348 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-04 18:02:47.349 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-02-04 18:02:47.349 +05:30 [INF] login done and home page loaded
+2025-02-04 18:02:47.351 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-04 18:02:47.360 +05:30 [INF] Executed ViewResult - view Index executed in 10.2154ms.
+2025-02-04 18:02:47.360 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 10.5147ms
+2025-02-04 18:02:47.360 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-04 18:02:47.360 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/ - 200 null text/html; charset=utf-8 12.3848ms
+2025-02-04 18:02:47.367 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-04 18:02:47.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2232ms
+2025-02-04 18:02:47.404 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/favicon.ico - null null
+2025-02-04 18:02:47.405 +05:30 [INF] The file /favicon.ico was not modified
+2025-02-04 18:02:47.405 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/favicon.ico - 304 null image/x-icon 1.0511ms

@@ -1,0 +1,8 @@
+2026-05-05 09:38:12.777 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-05 09:38:12.831 +05:30 [INF] Creating key {3061981c-4ca7-438b-a02a-4b95a683efc0} with creation date 2026-05-05 04:08:12Z, activation date 2026-05-05 04:08:12Z, and expiration date 2026-08-03 04:08:12Z.
+2026-05-05 09:38:12.839 +05:30 [INF] Writing data to file 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys\key-3061981c-4ca7-438b-a02a-4b95a683efc0.xml'.
+2026-05-05 09:38:12.907 +05:30 [INF] Now listening on: http://localhost:5247
+2026-05-05 09:38:12.909 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-05 09:38:12.910 +05:30 [INF] Hosting environment: Development
+2026-05-05 09:38:12.910 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Downloads\MVC_MobileStockManagementApplication\MVC_MobileStockManagementApplication
+2026-05-05 09:48:26.407 +05:30 [INF] Application is shutting down...

@@ -1,0 +1,100 @@
+2025-01-28 10:02:14.179 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-28 10:02:14.269 +05:30 [INF] Now listening on: http://localhost:5247
+2025-01-28 10:02:14.272 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-28 10:02:14.272 +05:30 [INF] Hosting environment: Development
+2025-01-28 10:02:14.272 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-01-28 10:02:27.283 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/ - null null
+2025-01-28 10:02:27.305 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-01-28 10:02:27.329 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-01-28 10:02:27.344 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-01-28 10:02:27.400 +05:30 [INF] Executing ViewResult, running view Index.
+2025-01-28 10:02:27.508 +05:30 [INF] Executed ViewResult - view Index executed in 112.4191ms.
+2025-01-28 10:02:27.512 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 167.2476ms
+2025-01-28 10:02:27.512 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-01-28 10:02:27.515 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - null null
+2025-01-28 10:02:27.516 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/ - 200 null text/html; charset=utf-8 233.3981ms
+2025-01-28 10:02:27.517 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-28 10:02:27.520 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.8379ms
+2025-01-28 10:02:27.521 +05:30 [INF] The file /MVC_MobileStockManagementApplication.styles.css was not modified
+2025-01-28 10:02:27.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - 304 null text/css 7.4465ms
+2025-01-28 10:02:29.938 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:02:29.942 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+MVC_MobileStockManagementApplication.Controllers.LoginController.Index (MVC_MobileStockManagementApplication)
+MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-28 10:02:29.975 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 500 null text/html; charset=utf-8 37.3267ms
+2025-01-28 10:02:29.981 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-28 10:02:29.981 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5383ms
+2025-01-28 10:06:51.967 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-28 10:06:52.060 +05:30 [INF] Now listening on: http://localhost:5247
+2025-01-28 10:06:52.063 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-28 10:06:52.063 +05:30 [INF] Hosting environment: Development
+2025-01-28 10:06:52.063 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-01-28 10:07:07.013 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:07:07.025 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-01-28 10:07:07.039 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 26.8099ms
+2025-01-28 10:07:07.065 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:07:08.295 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:07:08.301 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 6.23ms
+2025-01-28 10:07:08.301 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:07:12.286 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/ - null null
+2025-01-28 10:07:12.289 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-01-28 10:07:12.306 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-01-28 10:07:12.349 +05:30 [INF] Executing ViewResult, running view Index.
+2025-01-28 10:07:12.414 +05:30 [INF] Executed ViewResult - view Index executed in 71.1188ms.
+2025-01-28 10:07:12.415 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 107.8125ms
+2025-01-28 10:07:12.415 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-01-28 10:07:12.418 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/ - 200 null text/html; charset=utf-8 131.5498ms
+2025-01-28 10:07:12.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-28 10:07:12.428 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.7303ms
+2025-01-28 10:07:14.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:07:14.348 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 0.4488ms
+2025-01-28 10:07:14.348 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:08:15.603 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:08:15.603 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 0.428ms
+2025-01-28 10:08:15.603 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:08:16.457 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:08:16.458 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 1.2886ms
+2025-01-28 10:08:16.458 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:08:16.633 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:08:16.633 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 0.4546ms
+2025-01-28 10:08:16.633 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:08:16.803 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:08:16.804 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 0.4853ms
+2025-01-28 10:08:16.805 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:08:16.959 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:08:16.960 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 0.8925ms
+2025-01-28 10:08:16.960 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:08:17.122 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:08:17.124 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 1.5109ms
+2025-01-28 10:08:17.124 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:08:17.346 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-01-28 10:08:17.347 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 404 0 null 0.5384ms
+2025-01-28 10:08:17.347 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5247/Login, Response status code: 404
+2025-01-28 10:13:15.896 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-28 10:13:16.035 +05:30 [INF] Now listening on: http://localhost:5247
+2025-01-28 10:13:16.039 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-28 10:13:16.039 +05:30 [INF] Hosting environment: Development
+2025-01-28 10:13:16.039 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-01-28 10:14:23.361 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-28 10:14:23.435 +05:30 [INF] Now listening on: http://localhost:5247
+2025-01-28 10:14:23.438 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-28 10:14:23.438 +05:30 [INF] Hosting environment: Development
+2025-01-28 10:14:23.438 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-01-28 15:26:02.978 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-28 15:26:03.059 +05:30 [INF] Now listening on: http://localhost:5247
+2025-01-28 15:26:03.061 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-28 15:26:03.062 +05:30 [INF] Hosting environment: Development
+2025-01-28 15:26:03.062 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication

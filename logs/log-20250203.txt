@@ -1,0 +1,234 @@
+2025-02-03 09:45:07.461 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-03 09:45:07.577 +05:30 [INF] Now listening on: http://localhost:5247
+2025-02-03 09:45:07.580 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-03 09:45:07.580 +05:30 [INF] Hosting environment: Development
+2025-02-03 09:45:07.580 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-02-03 09:45:21.453 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/ - null null
+2025-02-03 09:45:21.475 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-02-03 09:45:21.500 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:21.511 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-02-03 09:45:21.514 +05:30 [INF] login done and home page loaded
+2025-02-03 09:45:21.542 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-03 09:45:21.608 +05:30 [INF] Executed ViewResult - view Index executed in 68.5279ms.
+2025-02-03 09:45:21.612 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 100.2903ms
+2025-02-03 09:45:21.612 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:21.620 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-02-03 09:45:21.624 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/ - 200 null text/html; charset=utf-8 171.6619ms
+2025-02-03 09:45:21.625 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2025-02-03 09:45:21.625 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:45:21.628 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.6509ms
+2025-02-03 09:45:21.630 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2025-02-03 09:45:21.630 +05:30 [INF] The file /css/site.css was not modified
+2025-02-03 09:45:21.630 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 11.0484ms
+2025-02-03 09:45:21.630 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 5.9114ms
+2025-02-03 09:45:21.632 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/js/apiService.js - null null
+2025-02-03 09:45:21.632 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/jquery/dist/jquery.min.js - null null
+2025-02-03 09:45:21.634 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - null null
+2025-02-03 09:45:21.634 +05:30 [INF] The file /js/apiService.js was not modified
+2025-02-03 09:45:21.634 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2025-02-03 09:45:21.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/jquery/dist/jquery.min.js - 304 null text/javascript 1.5078ms
+2025-02-03 09:45:21.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/js/apiService.js - 304 null text/javascript 1.7497ms
+2025-02-03 09:45:21.634 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-02-03 09:45:21.634 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-02-03 09:45:21.635 +05:30 [INF] The file /js/site.js was not modified
+2025-02-03 09:45:21.635 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2025-02-03 09:45:21.635 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 0.5273ms
+2025-02-03 09:45:21.635 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 0.4484ms
+2025-02-03 09:45:21.650 +05:30 [INF] Sending file. Request path: '/MVC_MobileStockManagementApplication.styles.css'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\obj\Debug\net8.0\scopedcss\bundle\MVC_MobileStockManagementApplication.styles.css'
+2025-02-03 09:45:21.650 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - 200 1154 text/css 17.2777ms
+2025-02-03 09:45:24.947 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Display/Hauwei - null null
+2025-02-03 09:45:24.951 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Display (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:24.955 +05:30 [INF] Route matched with {action = "Display", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Display() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:45:24.959 +05:30 [INF] Executing ViewResult, running view Display.
+2025-02-03 09:45:24.979 +05:30 [INF] Executed ViewResult - view Display executed in 21.4637ms.
+2025-02-03 09:45:24.979 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Display (MVC_MobileStockManagementApplication) in 23.779ms
+2025-02-03 09:45:24.979 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Display (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:24.980 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Display/Hauwei - 200 null text/html; charset=utf-8 32.7676ms
+2025-02-03 09:45:24.995 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:45:24.995 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4717ms
+2025-02-03 09:45:28.079 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/login - null null
+2025-02-03 09:45:28.081 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:28.083 +05:30 [INF] Route matched with {action = "index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult index() on controller MVC_MobileStockManagementApplication.Controllers.LoginController (MVC_MobileStockManagementApplication).
+2025-02-03 09:45:28.089 +05:30 [INF] Executing ViewResult, running view index.
+2025-02-03 09:45:28.126 +05:30 [INF] Executed ViewResult - view index executed in 42.1231ms.
+2025-02-03 09:45:28.126 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication) in 42.8126ms
+2025-02-03 09:45:28.126 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:28.126 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/login - 200 null text/html; charset=utf-8 47.5791ms
+2025-02-03 09:45:28.139 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:45:28.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4115ms
+2025-02-03 09:45:39.201 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Views - null null
+2025-02-03 09:45:39.204 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:39.206 +05:30 [INF] Route matched with {action = "Views", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Views() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:45:39.207 +05:30 [INF] Executing ViewResult, running view Views.
+2025-02-03 09:45:39.214 +05:30 [INF] Executed ViewResult - view Views executed in 7.5818ms.
+2025-02-03 09:45:39.214 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication) in 8.0586ms
+2025-02-03 09:45:39.214 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:39.214 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Views - 200 null text/html; charset=utf-8 12.5794ms
+2025-02-03 09:45:39.233 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:45:39.233 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2509ms
+2025-02-03 09:45:48.663 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Hauwei - null null
+2025-02-03 09:45:48.663 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:48.665 +05:30 [INF] Route matched with {action = "Buy", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Buy() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:45:48.666 +05:30 [INF] Executing ViewResult, running view Buy.
+2025-02-03 09:45:48.673 +05:30 [INF] Executed ViewResult - view Buy executed in 7.8187ms.
+2025-02-03 09:45:48.673 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication) in 8.2648ms
+2025-02-03 09:45:48.674 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:48.674 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Hauwei - 200 null text/html; charset=utf-8 11.0255ms
+2025-02-03 09:45:48.694 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:45:48.694 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2628ms
+2025-02-03 09:45:56.783 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Views - null null
+2025-02-03 09:45:56.785 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:56.785 +05:30 [INF] Route matched with {action = "Views", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Views() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:45:56.785 +05:30 [INF] Executing ViewResult, running view Views.
+2025-02-03 09:45:56.787 +05:30 [INF] Executed ViewResult - view Views executed in 1.589ms.
+2025-02-03 09:45:56.787 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication) in 2.3091ms
+2025-02-03 09:45:56.787 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:45:56.788 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Views - 200 null text/html; charset=utf-8 4.7223ms
+2025-02-03 09:45:56.817 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:45:56.817 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2255ms
+2025-02-03 09:46:00.247 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Gionee - null null
+2025-02-03 09:46:00.248 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:00.248 +05:30 [INF] Route matched with {action = "Buy", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Buy() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:00.248 +05:30 [INF] Executing ViewResult, running view Buy.
+2025-02-03 09:46:00.249 +05:30 [INF] Executed ViewResult - view Buy executed in 1.2157ms.
+2025-02-03 09:46:00.250 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication) in 1.4204ms
+2025-02-03 09:46:00.250 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:00.250 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Gionee - 200 null text/html; charset=utf-8 2.4794ms
+2025-02-03 09:46:00.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:00.264 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2523ms
+2025-02-03 09:46:02.900 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:02.900 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2335ms
+2025-02-03 09:46:04.707 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Display/Gionee - null null
+2025-02-03 09:46:04.708 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Display (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:04.708 +05:30 [INF] Route matched with {action = "Display", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Display() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:04.708 +05:30 [INF] Executing ViewResult, running view Display.
+2025-02-03 09:46:04.709 +05:30 [INF] Executed ViewResult - view Display executed in 1.199ms.
+2025-02-03 09:46:04.710 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Display (MVC_MobileStockManagementApplication) in 1.3885ms
+2025-02-03 09:46:04.710 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Display (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:04.710 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Display/Gionee - 200 null text/html; charset=utf-8 2.3557ms
+2025-02-03 09:46:04.720 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:04.720 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4605ms
+2025-02-03 09:46:09.509 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Gionee - null null
+2025-02-03 09:46:09.509 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:09.509 +05:30 [INF] Route matched with {action = "Buy", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Buy() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:09.510 +05:30 [INF] Executing ViewResult, running view Buy.
+2025-02-03 09:46:09.510 +05:30 [INF] Executed ViewResult - view Buy executed in 1.0845ms.
+2025-02-03 09:46:09.510 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication) in 1.2305ms
+2025-02-03 09:46:09.511 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:09.511 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Gionee - 200 null text/html; charset=utf-8 1.9837ms
+2025-02-03 09:46:09.523 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:09.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.136ms
+2025-02-03 09:46:14.827 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Views - null null
+2025-02-03 09:46:14.827 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:14.828 +05:30 [INF] Route matched with {action = "Views", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Views() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:14.828 +05:30 [INF] Executing ViewResult, running view Views.
+2025-02-03 09:46:14.828 +05:30 [INF] Executed ViewResult - view Views executed in 0.6334ms.
+2025-02-03 09:46:14.828 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication) in 0.7574ms
+2025-02-03 09:46:14.828 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:14.829 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Views - 200 null text/html; charset=utf-8 1.3654ms
+2025-02-03 09:46:14.841 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:14.841 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1524ms
+2025-02-03 09:46:18.276 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Gionee - null null
+2025-02-03 09:46:18.276 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:18.277 +05:30 [INF] Route matched with {action = "Buy", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Buy() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:18.277 +05:30 [INF] Executing ViewResult, running view Buy.
+2025-02-03 09:46:18.277 +05:30 [INF] Executed ViewResult - view Buy executed in 0.7113ms.
+2025-02-03 09:46:18.277 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication) in 0.8812ms
+2025-02-03 09:46:18.278 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Buy (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:18.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Buy/Gionee - 200 null text/html; charset=utf-8 1.6839ms
+2025-02-03 09:46:18.289 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:18.289 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1575ms
+2025-02-03 09:46:25.226 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Views - null null
+2025-02-03 09:46:25.226 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:25.226 +05:30 [INF] Route matched with {action = "Views", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Views() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:25.227 +05:30 [INF] Executing ViewResult, running view Views.
+2025-02-03 09:46:25.228 +05:30 [INF] Executed ViewResult - view Views executed in 1.4431ms.
+2025-02-03 09:46:25.228 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication) in 1.7147ms
+2025-02-03 09:46:25.228 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:25.228 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Views - 200 null text/html; charset=utf-8 2.6836ms
+2025-02-03 09:46:25.245 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:25.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1644ms
+2025-02-03 09:46:33.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Home - null null
+2025-02-03 09:46:33.366 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:33.366 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:33.366 +05:30 [INF] login done and home page loaded
+2025-02-03 09:46:33.366 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-03 09:46:33.367 +05:30 [INF] Executed ViewResult - view Index executed in 0.7787ms.
+2025-02-03 09:46:33.367 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 1.1228ms
+2025-02-03 09:46:33.367 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:33.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Home - 200 null text/html; charset=utf-8 2.0825ms
+2025-02-03 09:46:33.377 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:33.377 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1373ms
+2025-02-03 09:46:34.905 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-02-03 09:46:34.905 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:34.905 +05:30 [INF] Route matched with {action = "index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult index() on controller MVC_MobileStockManagementApplication.Controllers.LoginController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:34.905 +05:30 [INF] Executing ViewResult, running view index.
+2025-02-03 09:46:34.907 +05:30 [INF] Executed ViewResult - view index executed in 1.6926ms.
+2025-02-03 09:46:34.907 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication) in 1.9545ms
+2025-02-03 09:46:34.907 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:34.907 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 200 null text/html; charset=utf-8 2.6048ms
+2025-02-03 09:46:34.917 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:34.917 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2383ms
+2025-02-03 09:46:36.734 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/AdminLogin - null null
+2025-02-03 09:46:36.734 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.AdminLoginController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:36.736 +05:30 [INF] Route matched with {action = "Index", controller = "AdminLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.AdminLoginController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:36.737 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-03 09:46:36.745 +05:30 [INF] Executed ViewResult - view Index executed in 8.9849ms.
+2025-02-03 09:46:36.745 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.AdminLoginController.Index (MVC_MobileStockManagementApplication) in 9.6414ms
+2025-02-03 09:46:36.745 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.AdminLoginController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:36.746 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/AdminLogin - 200 null text/html; charset=utf-8 11.9906ms
+2025-02-03 09:46:36.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:36.753 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.136ms
+2025-02-03 09:46:48.883 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/AdminHandler - null null
+2025-02-03 09:46:48.883 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.AdminHandlerController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:48.884 +05:30 [INF] Route matched with {action = "Index", controller = "AdminHandler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.AdminHandlerController (MVC_MobileStockManagementApplication).
+2025-02-03 09:46:48.885 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-03 09:46:48.892 +05:30 [INF] Executed ViewResult - view Index executed in 6.8433ms.
+2025-02-03 09:46:48.892 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.AdminHandlerController.Index (MVC_MobileStockManagementApplication) in 7.653ms
+2025-02-03 09:46:48.892 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.AdminHandlerController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:46:48.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/AdminHandler - 200 null text/html; charset=utf-8 9.1816ms
+2025-02-03 09:46:48.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:46:48.926 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1249ms
+2025-02-03 09:47:06.873 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Home - null null
+2025-02-03 09:47:06.873 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:47:06.873 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-02-03 09:47:06.873 +05:30 [INF] login done and home page loaded
+2025-02-03 09:47:06.873 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-03 09:47:06.874 +05:30 [INF] Executed ViewResult - view Index executed in 0.681ms.
+2025-02-03 09:47:06.874 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 0.9348ms
+2025-02-03 09:47:06.874 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 09:47:06.874 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Home - 200 null text/html; charset=utf-8 1.7078ms
+2025-02-03 09:47:06.891 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 09:47:06.891 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1284ms
+2025-02-03 18:05:22.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-02-03 18:05:22.747 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 18:05:22.747 +05:30 [INF] Route matched with {action = "index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult index() on controller MVC_MobileStockManagementApplication.Controllers.LoginController (MVC_MobileStockManagementApplication).
+2025-02-03 18:05:22.748 +05:30 [INF] Executing ViewResult, running view index.
+2025-02-03 18:05:22.750 +05:30 [INF] Executed ViewResult - view index executed in 2.2487ms.
+2025-02-03 18:05:22.750 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication) in 2.6816ms
+2025-02-03 18:05:22.750 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 18:05:22.750 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 200 null text/html; charset=utf-8 4.0711ms
+2025-02-03 18:05:22.761 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 18:05:22.762 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.194ms
+2025-02-03 18:05:23.962 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Login - null null
+2025-02-03 18:05:23.962 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 18:05:23.962 +05:30 [INF] Route matched with {action = "index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult index() on controller MVC_MobileStockManagementApplication.Controllers.LoginController (MVC_MobileStockManagementApplication).
+2025-02-03 18:05:23.962 +05:30 [INF] Executing ViewResult, running view index.
+2025-02-03 18:05:23.963 +05:30 [INF] Executed ViewResult - view index executed in 0.62ms.
+2025-02-03 18:05:23.963 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication) in 0.8386ms
+2025-02-03 18:05:23.963 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.LoginController.index (MVC_MobileStockManagementApplication)'
+2025-02-03 18:05:23.963 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Login - 200 null text/html; charset=utf-8 1.2407ms
+2025-02-03 18:05:23.972 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 18:05:23.973 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1058ms
+2025-02-03 18:05:35.369 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Register - null null
+2025-02-03 18:05:35.369 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.RegisterController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 18:05:35.371 +05:30 [INF] Route matched with {action = "Index", controller = "Register"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.RegisterController (MVC_MobileStockManagementApplication).
+2025-02-03 18:05:35.373 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-03 18:05:35.379 +05:30 [INF] Executed ViewResult - view Index executed in 6.3032ms.
+2025-02-03 18:05:35.379 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.RegisterController.Index (MVC_MobileStockManagementApplication) in 7.5128ms
+2025-02-03 18:05:35.379 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.RegisterController.Index (MVC_MobileStockManagementApplication)'
+2025-02-03 18:05:35.379 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Register - 200 null text/html; charset=utf-8 10.2893ms
+2025-02-03 18:05:35.386 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 18:05:35.386 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1283ms
+2025-02-03 18:05:59.619 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-03 18:05:59.619 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1817ms

@@ -1,0 +1,44 @@
+2025-02-10 18:18:01.307 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-10 18:18:01.367 +05:30 [INF] Now listening on: http://localhost:5247
+2025-02-10 18:18:01.369 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 18:18:01.369 +05:30 [INF] Hosting environment: Development
+2025-02-10 18:18:01.369 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-02-10 18:19:38.349 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/Purchase/Views - null null
+2025-02-10 18:19:38.370 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-02-10 18:19:38.392 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-10 18:19:38.413 +05:30 [INF] Route matched with {action = "Views", controller = "Purchase"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Views() on controller MVC_MobileStockManagementApplication.Controllers.PurchaseController (MVC_MobileStockManagementApplication).
+2025-02-10 18:19:38.433 +05:30 [INF] Executing ViewResult, running view Views.
+2025-02-10 18:19:38.504 +05:30 [INF] Executed ViewResult - view Views executed in 76.2706ms.
+2025-02-10 18:19:38.521 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication) in 107.1885ms
+2025-02-10 18:19:38.521 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.PurchaseController.Views (MVC_MobileStockManagementApplication)'
+2025-02-10 18:19:38.524 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/Purchase/Views - 200 null text/html; charset=utf-8 176.0924ms
+2025-02-10 18:19:38.525 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - null null
+2025-02-10 18:19:38.525 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2025-02-10 18:19:38.530 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/js/apiService.js - null null
+2025-02-10 18:19:38.532 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/jquery/dist/jquery.min.js - null null
+2025-02-10 18:19:38.538 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-02-10 18:19:38.541 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-02-10 18:19:38.548 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\wwwroot\css\site.css'
+2025-02-10 18:19:38.548 +05:30 [INF] Sending file. Request path: '/js/apiService.js'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\wwwroot\js\apiService.js'
+2025-02-10 18:19:38.548 +05:30 [INF] Sending file. Request path: '/MVC_MobileStockManagementApplication.styles.css'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\obj\Debug\net8.0\scopedcss\bundle\MVC_MobileStockManagementApplication.styles.css'
+2025-02-10 18:19:38.549 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 26.559ms
+2025-02-10 18:19:38.550 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2025-02-10 18:19:38.551 +05:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\wwwroot\lib\jquery\dist\jquery.min.js'
+2025-02-10 18:19:38.549 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/js/apiService.js - 200 1822 text/javascript 19.1041ms
+2025-02-10 18:19:38.551 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 10.0466ms
+2025-02-10 18:19:38.549 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - 200 1154 text/css 24.1823ms
+2025-02-10 18:19:38.551 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 18.9534ms
+2025-02-10 18:19:38.551 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2025-02-10 18:19:38.551 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 13.4608ms
+2025-02-10 18:19:38.558 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-02-10 18:19:38.562 +05:30 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication\wwwroot\js\site.js'
+2025-02-10 18:19:38.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 3.807ms
+2025-02-10 18:19:45.299 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/ - null null
+2025-02-10 18:19:45.299 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-10 18:19:45.301 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-02-10 18:19:45.302 +05:30 [INF] login done and home page loaded
+2025-02-10 18:19:45.326 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-10 18:19:45.329 +05:30 [INF] Executed ViewResult - view Index executed in 3.1188ms.
+2025-02-10 18:19:45.329 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 27.8652ms
+2025-02-10 18:19:45.329 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-10 18:19:45.329 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/ - 200 null text/html; charset=utf-8 30.3342ms

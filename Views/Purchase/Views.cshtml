@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "MobileStockManagement";
+}
+
+<h1 class="text-center my-4">Mobile Stock Management Application</h1>
+
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <input type="text" id="searchBox" class="form-control" placeholder="⌕  Search Mobile..." onkeyup="filterMobiles()">
+        </div>
+    </div>
+    <div class="row" id="mobileCardsRow"></div>
+</div>
+
+<script src="/js/apiService.js"></script>
+<script>
+    let allProducts = []; // Store all products for filtering
+
+    const loadMobileCards = async () => {
+        try {
+            allProducts = await apiService.get('Purchase');
+            renderMobiles(allProducts);
+        } catch (error) {
+            console.error('Error loading mobiles:', error);
+            alert('Failed to load mobile stock.');
+        }
+    };
+
+    const renderMobiles = (products) => {
+        const row = document.getElementById('mobileCardsRow');
+        row.innerHTML = products.map(product => `
+            <div class="col-md-4 mb-4 mobile-card" data-name="${product.mobileName.toLowerCase()}">
+                <div class="card shadow-sm text-center h-100">
+                    <div class="card-header text-center"><h5 class="card-title">${product.mobileName}</h5></div>
+                    <img src=${product.mobileImage} class="card-img-top h-75 w-50 mx-auto mt-2" alt="${product.mobileName}">
+                    <div class="card-body">
+                        <p class="card-text"><strong>Price:</strong> ₹${product.price} <br><strong>Available:</strong> ${product.quantity} units</p>
+                        
+                        <div class="d-flex">
+                            <button class="btn btn-primary w-100 me-1" onclick="window.location.href='/Purchase/Buy/${product.mobileName}'">
+                                <i class="fa fa-shopping-cart me-3"></i>Buy
+                            </button>
+                            <button class="btn btn-danger w-100" onclick="window.location.href='/Purchase/Display/${product.mobileName}'">
+                                <i class="fa fa-eye me-3"></i>View
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>`).join('');
+    };
+
+    const filterMobiles = () => {
+        const query = document.getElementById('searchBox').value.toLowerCase();
+        const filteredProducts = allProducts.filter(product => product.mobileName.toLowerCase().includes(query));
+        renderMobiles(filteredProducts);
+    };
+
+    document.addEventListener('DOMContentLoaded', loadMobileCards);
+</script>

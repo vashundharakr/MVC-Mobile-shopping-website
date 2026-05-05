@@ -1,0 +1,96 @@
+@model MVC_MobileStockManagementApplication.Models.Login
+@{
+    ViewData["Title"] = "Login - MobileStockManagementApplication";
+}
+
+<div class="container w-50 border p-3">
+    <h3 class="text-center">Login</h3>
+    <form id="loginForm">
+        <!-- Username Input -->
+        <div class="form-group">
+            <label for="Username" class="fw-bold my-2">Username</label>
+            <input type="text" class="form-control" id="Username" required asp-for="UserName" / >
+            <small class="text-muted">Username must be between 8 to 10 characters.</small>
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-group">
+            <label for="Password" class="fw-bold my-2">Password</label>
+            <input type="password" class="form-control" id="Password" required asp-for="Password" />
+        </div>
+
+        <!-- Role Selection (Admin or User) 
+        <div class="form-group my-3">
+            <label for="role" class="fw-bold">Select Role</label>
+            <select id="role" class="form-control" required asp-for="role">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+        </div>-->
+
+        <!-- Error Container -->
+        <div id="errorContainer" class="text-danger my-2" style="display: none;"></div>
+
+        <!-- Login Button -->
+        <button type="submit" class="btn btn-dark w-100 my-3">Login</button>
+
+        <!-- New User Registration Link -->
+        <h6 class="text-end my-3">New user? <a class="text-primary" href="/Register">Register</a></h6>
+        <h6 class="text-end my-3">Admin? <a class="text-primary" href="/AdminLogin">Admin</a></h6>
+    </form>
+</div>
+
+<script src="./js/apiService.js"></script>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        // Get the selected role (Admin or User)
+       // const role = document.getElementById("role").value;
+
+        // Prepare login data
+        const loginData = {
+            username: document.getElementById("Username").value,
+            password: document.getElementById("Password").value,
+        };
+
+        try {
+            console.log("Submitting form data:", loginData);
+            const role='user';
+
+            // Determine which API endpoint to hit based on the selected role
+            let loginUrl = '';
+            if (role === 'admin') {
+                loginUrl = 'Login/Admin-login';  // Admin login route
+            } else if (role === 'user') {
+                loginUrl = 'Login/User-login';  // User login route
+            }
+
+            // Submit the login data to the appropriate endpoint
+            const response = await apiService.post(loginUrl, loginData);
+
+            // On successful login, redirect based on the role
+            if (role === 'admin') {
+                alert('Admin logged in successfully!');
+                // Store the username in localStorage
+                localStorage.setItem('username', loginData.username);
+                window.location.href = '/AdminHandler';  // Redirect to Admin dashboard
+            } else {
+                alert('User logged in successfully!');
+                // Store the username in localStorage
+                
+                localStorage.setItem('username', loginData.username);
+                window.location.href = '/Purchase/Views';  // Redirect to User dashboard
+                  HttpContext.Session.SetString("IsLoggedIn", "true");
+            }
+
+        } catch (error) {
+            console.error('Error in Login:', error);
+            const errorContainer = document.getElementById('errorContainer');
+            errorContainer.style.display = 'block';
+            errorContainer.innerText = 'Invalid credentials or an error occurred. Please try again.';
+        }
+    });
+
+</script>

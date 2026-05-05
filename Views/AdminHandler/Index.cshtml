@@ -1,0 +1,179 @@
+@model List<MVC_MobileStockManagementApplication.Models.AdminHandler>
+
+@{
+    ViewData["Title"] = "Mobile Stock Management";
+}
+<!-- AdminHandler that can perform add,edit,delete,view-->
+<h1 class="text-center my-4">Mobile Stock Management Application</h1>
+
+<div class="container">
+    <div class="row" id="mobileCardsRow">
+        <!-- Add New Mobile Card -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm h-100 text-center">
+                <div class="card-header">
+                    <h5 class="card-title">Add New Mobile</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Include mobile brand name, price, stock, and image URL.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#addMobileModal">Add New Mobile</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Mobile Card -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm h-100 text-center">
+                <div class="card-header">
+                    <h5 class="card-title">Delete Mobile</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Exclude a mobile from the stock.</p>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#deleteMobileModal">Delete Mobile</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Mobile Card -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm h-100 text-center">
+                <div class="card-header">
+                    <h5 class="card-title">Edit Mobile</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Modify details of a mobile in the stock.</p>
+                    <a href="/Purchase"><button type="button" class="btn btn-warning">Edit Mobile</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Mobile Card (New Card) -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm h-100 text-center">
+                <div class="card-header">
+                    <h5 class="card-title">View Mobile</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">View details of a mobile in the stock.</p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#viewMobileModal"
+                        onclick="window.location.href=('/Purchase/Views')">View Mobile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Mobile Modal -->
+<div class="modal fade" id="addMobileModal" tabindex="-1" aria-labelledby="addMobileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addMobileModalLabel">Add New Mobile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addMobileForm">
+                    <div class="mb-3">
+                        <label for="mobileName" class="form-label">Mobile Name</label>
+                        <input type="text" class="form-control" id="mobileName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="price" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileImage" class="form-label">Image URL</label>
+                        <input type="text" class="form-control" id="mobileImage" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveMobileBtn">Save Mobile</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Mobile Modal -->
+<div class="modal fade" id="deleteMobileModal" tabindex="-1" aria-labelledby="deleteMobileModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form method="post" asp-controller="AdminHandler" asp-action="Delete">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteMobileModalLabel">Delete Mobile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label for="mobileNameInput" class="form-label">Enter Mobile Name to Delete</label>
+                        <input type="text" class="form-control" id="mobileNameInput" name="mobileName" required>
+                    </div>
+                    <p>Are you sure you want to delete this mobile from the inventory?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-danger">Delete Mobile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/apiService.js"></script>
+
+<script>
+    // Save new mobile to inventory
+    document.getElementById('saveMobileBtn').addEventListener('click', async () => {
+        const newMobile = {
+            mobileName: document.getElementById('mobileName').value,
+            price: parseInt(document.getElementById('price').value),
+            quantity: parseInt(document.getElementById('quantity').value),
+            mobileImage: document.getElementById('mobileImage').value,
+            description: 'A newly added mobile device'
+        };
+
+        try {
+            const response = await apiService.post('Purchase/Mobile/Add', newMobile);
+            alert(response.message);
+            bootstrap.Modal.getInstance(document.getElementById('addMobileModal')).hide();
+            //loadMobileCards(); // Optionally, refresh the mobile cards if needed
+        } catch (error) {
+            console.error('Error adding mobile:', error);
+            alert('Failed to add mobile.');
+        }
+    });
+
+    // View Mobile Details
+    document.getElementById('viewMobileModal').addEventListener('show.bs.modal', async (event) => {
+        // Sample mobile name, you can change this to dynamically select a mobile to view.
+        const mobileName = "Sample Mobile Name"; // Replace with selected mobile name
+
+        try {
+            const response = await apiService.get(`Purchase/Mobile/View/${mobileName}`);
+            if (response && response.data) {
+                document.getElementById('viewMobileName').value = response.data.mobileName;
+                document.getElementById('viewMobilePrice').value = response.data.price;
+                document.getElementById('viewMobileQuantity').value = response.data.quantity;
+                document.getElementById('viewMobileImage').value = response.data.mobileImage;
+            } else {
+                alert('Mobile details not found.');
+            }
+        } catch (error) {
+            console.error('Error viewing mobile:', error);
+            alert('Failed to fetch mobile details.');
+        }
+    });
+</script>
+
+<!-- Include Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

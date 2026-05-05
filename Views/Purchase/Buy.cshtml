@@ -1,0 +1,186 @@
+<div class="container mt-5">
+    <!-- Flex Container for Side-by-Side Layout -->
+    <div class="row justify-content-center" style="display: flex; justify-content: space-around;">
+        <!-- Product Details Section -->
+        <div class="col-md-3">
+            <div class="card shadow-lg" id="productDetails">
+                <div class="card-header text-white bg-primary">
+                    <h5 class="card-title mb-0">Purchase Details</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Mobile Name:</strong> <span id="mobileName"></span></li>
+                        <li class="list-group-item"><strong>Quantity Available:</strong> <span
+                                id="availableQuantity"></span></li>
+                        <li class="list-group-item"><strong>Price per Unit:</strong> ₹<span id="unitPrice"></span></li>
+                    </ul>
+
+                    <!-- Input field for quantity -->
+                    <div class="mt-3">
+                        <input type="number" id="quantity" class="form-control" min="1" placeholder="Enter Quantity"
+                            required>
+                    </div>
+                    <div class="mt-3">
+                        <p><strong>Total Price:</strong> ₹<span id="totalPrice">0</span></p>
+                    </div>
+
+                    <button class="btn btn-success btn-block mt-3" id="buyNowBtn">Buy Now</button>
+                    <a href="/Purchase/Views" class="btn btn-secondary btn-block mt-2">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of Row -->
+
+    <!-- Receipt Section (hidden initially) -->
+    <div class="row justify-content-center mt-5" id="receiptSection"
+        style="opacity: 0; z-index: -1; transition: opacity 0.5s, z-index 0.5s;">
+        <div class="col-md-3">
+            <div class="card shadow-lg" id="receiptCard">
+                <div class="card-header text-white bg-secondary">
+                    <h5 class="card-title mb-0 text-center">Your Receipt</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Receipt No.:</strong> #<span id="receiptNumber">12345</span></p>
+                    <p><strong>Purchase Date:</strong> <span id="purchaseDate">2025-01-22</span></p>
+                    <p><strong>Mobile Name:</strong> <span id="receiptMobileName">Loading...</span></p>
+                    <p><strong>Quantity Purchased:</strong> <span id="receiptQuantity">0</span></p>
+                    <p><strong>Price per Unit:</strong> ₹<span id="receiptPrice">0</span></p>
+                    <p><strong>Total Price:</strong> ₹<span id="receiptTotalPrice">0</span></p>
+                    <hr class="my-4">
+                    <p class="text-center"><strong>Thank you for your purchase!</strong></p>
+                    <div class="text-center">
+                        <a href="/Purchase/Views" class="btn btn-secondary btn-block mt-3">Go Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of Receipt Row -->
+</div> <!-- End of Container -->
+
+<script src="/js/apiService.js"></script>
+
+<script>
+    // Get elements by their IDs
+    const mobileNameInput = document.getElementById("mobileName");
+    const priceInput = document.getElementById("unitPrice");
+    const quantityInputField = document.getElementById("quantity");
+    const availableQuantityInput = document.getElementById("availableQuantity");
+    const totalPriceSpan = document.getElementById("totalPrice");
+    const buyNowBtn = document.getElementById("buyNowBtn"); // Assuming you have a "Buy Now" button
+
+    // Receipt Section elements
+    const receiptSection = document.getElementById("receiptSection");
+    const receiptNumber = document.getElementById("receiptNumber");
+    const purchaseDate = document.getElementById("purchaseDate");
+    const receiptMobileName = document.getElementById("receiptMobileName");
+    const receiptQuantity = document.getElementById("receiptQuantity");
+    const receiptPrice = document.getElementById("receiptPrice");
+    const receiptTotalPrice = document.getElementById("receiptTotalPrice");
+
+    let mobileDetails = {}; // Store mobile details (API Response)
+
+    // Assuming you have mobileName from the URL or passed context
+    const mobileName = window.location.pathname.split('/').pop();  // Get mobile name from URL
+
+    // Fetch mobile details from the API
+    function loadMobileDetails() {
+        apiService.get(`Purchase/${mobileName}`) // Update this API endpoint based on your backend
+            .then(response => {
+                // Log the response to verify its structure
+                console.log("Response from API:", response);
+
+                // Check if the response data has the expected structure
+                if (response && response.mobileName && response.price && response.quantity) {
+                    mobileDetails = response; // Store the mobile data
+
+                    // Populate the form with the mobile details
+                    mobileNameInput.textContent = response.mobileName || "N/A"; // Set mobile name
+                    priceInput.textContent = response.price ? response.price.toFixed(2) : "0.00"; // Set price
+                    availableQuantityInput.textContent = response.quantity || "0"; // Set available quantity
+
+                    // Set initial total price (if any quantity is entered)
+                    totalPriceSpan.textContent = (parseInt(quantityInputField.value) * response.price).toFixed(2);
+                } else {
+                    console.error("Invalid response data:", response);
+                    alert("Failed to load valid mobile details.");
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching mobile details:', error);
+                alert('Error loading mobile details');
+            });
+    }
+
+    // Update the total price when the user enters quantity
+    function updateTotalPrice() {
+        const quantity = parseInt(quantityInputField.value);
+
+        if (quantity && quantity <= mobileDetails.quantity) {
+            const totalPrice = quantity * mobileDetails.price;
+            totalPriceSpan.textContent = totalPrice.toFixed(2);
+        } else {
+            totalPriceSpan.textContent = "0.00";
+        }
+    }
+
+    // Handle the "Buy Now" button click
+    async function handleBuyNow() {
+        const quantity = parseInt(quantityInputField.value);
+
+        // Validate the quantity
+        if (!quantity || quantity <= 0) {
+            alert("Please enter a valid quantity!");
+            return;
+        }
+
+        if (quantity > mobileDetails.quantity) {
+            alert("Sorry, there aren't enough items in stock!");
+            return;
+        }
+
+        const updatedMobile = {
+            mobileName: mobileDetails.mobileName,
+            quantity: quantity,
+            totalPrice: quantity * mobileDetails.price
+        };
+
+        try {
+            // Send the purchase request to the API
+            const response = await apiService.post('Purchase/Buy', updatedMobile);
+
+            // Log the full response to see what the server is returning
+            console.log("Purchase response:", response);
+
+            // After successful purchase, show the receipt and update details
+            const currentDate = new Date().toISOString().split('T').join(' ').split('.')[0];
+            receiptNumber.textContent = Math.floor(Math.random() * 100000);  // Simulating a receipt number
+            purchaseDate.textContent = currentDate;
+            receiptMobileName.textContent = mobileDetails.mobileName;
+            receiptQuantity.textContent = quantity;
+            receiptPrice.textContent = mobileDetails.price.toFixed(2);
+            receiptTotalPrice.textContent = (quantity * mobileDetails.price).toFixed(2);
+
+            // Show receipt section with smooth transition
+            receiptSection.style.opacity = 1;
+            receiptSection.style.zIndex = 1;
+
+            // Optionally, hide the purchase details
+            document.getElementById("productDetails").style.display = "none";
+        } catch (error) {
+            // Log the error response
+            console.error('Error processing purchase:', error);
+
+            // Display the error to the user
+            alert('Error during purchase: ' + (error.message || 'Unknown error'));
+        }
+    }
+
+    // Add event listener for the "Buy Now" button
+    buyNowBtn.addEventListener("click", handleBuyNow);
+
+    // Add event listener for updating total price when quantity changes
+    quantityInputField.addEventListener("input", updateTotalPrice);
+
+    // Load mobile details when the page is loaded
+    document.addEventListener("DOMContentLoaded", loadMobileDetails);
+</script>

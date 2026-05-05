@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVC_MobileStockManagementApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MVC_MobileStockManagementApplication.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-toggleable-sm navbar-expand-lg navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MobileStockManagement</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav" id="navbarLinks">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="fa fa-home" aria-hidden="true"></i> Home
+                            </a>
+                        </li>
+
+                        <!-- Admin Link (Initially Hidden) -->
+                        <li class="nav-item" id="adminLink" style="display: none;">
+                            <a class="nav-link text-white" asp-area="" asp-controller="AdminHandler" asp-action="Index">
+                                <i class="fa fa-user-shield" aria-hidden="true"></i> Admin
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Right-side items -->
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+                        <!-- Username Display -->
+                        <span id="userUsername" class="nav-link text-white" style="display: none;"></span>
+
+                        <!-- Login and Logout Buttons -->
+                        <li class="nav-item">
+                            <button class="btn btn-dark" id="loginBtn">
+                                <a class="text-white text-decoration-none" asp-area="" asp-controller="Login"
+                                    asp-action="index">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Login
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-dark" id="logoutBtn" style="display: none;" onclick="logout()">
+                                <i class="fa fa-sign-out-alt" aria-hidden="true"></i> Logout
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5 small-footer">
+        <div class="container">
+            &copy; 2025 - MobileStockManagementApplication - 
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        // Get username from localStorage
+        const username = localStorage.getItem('username');
+
+        // Get navbar elements
+        const adminLink = document.getElementById('adminLink'); // Admin link
+        const loginBtn = document.getElementById('loginBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const userUsername = document.getElementById('userUsername');
+
+        // Function to update navbar based on login status
+        function updateNavbar() {
+            if (username) {
+                // User is logged in
+                userUsername.textContent = `Hello, ${username}`;
+                userUsername.style.display = 'block';
+
+                loginBtn.style.display = 'none';
+                logoutBtn.style.display = 'block';
+
+                // Show Admin link only if username is "Admin"
+                if (username.toLowerCase() === "admin") {
+                    adminLink.style.display = 'block';
+                } else {
+                    adminLink.style.display = 'none';
+                }
+            } else {
+                // User is logged out
+                userUsername.style.display = 'none';
+
+                loginBtn.style.display = 'block';
+                logoutBtn.style.display = 'none';
+
+                // Hide Admin link
+                adminLink.style.display = 'none';
+            }
+        }
+
+        // Call updateNavbar on page load
+        updateNavbar();
+
+        // Logout function
+        function logout() {
+            localStorage.removeItem('username');
+            window.location.href = "/Home";
+            updateNavbar();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVC_MobileStockManagementApplication
+build_property.RootNamespace = MVC_MobileStockManagementApplication
+build_property.ProjectDir = C:\Users\vashundhara.krish\Downloads\MVC_MobileStockManagementApplication\MVC_MobileStockManagementApplication\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\vashundhara.krish\Downloads\MVC_MobileStockManagementApplication\MVC_MobileStockManagementApplication
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/AdminHandler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5IYW5kbGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/AdminLogin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Login/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Purchase/Buy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcQnV5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Purchase/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Purchase/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Purchase/Views.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcVmlld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Register/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/_Partialview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1BhcnRpYWx2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vashundhara.krish/Downloads/MVC_MobileStockManagementApplication/MVC_MobileStockManagementApplication/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-w1llfbsys0

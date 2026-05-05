@@ -1,0 +1,46 @@
+2025-02-08 16:24:09.902 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-08 16:24:10.978 +05:30 [INF] Now listening on: http://localhost:5247
+2025-02-08 16:24:10.981 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-08 16:24:10.982 +05:30 [INF] Hosting environment: Development
+2025-02-08 16:24:10.982 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-02-08 17:19:37.235 +05:30 [INF] Application is shutting down...
+2025-02-08 17:20:00.414 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-08 17:20:00.501 +05:30 [INF] Now listening on: http://localhost:5247
+2025-02-08 17:20:00.503 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-08 17:20:00.503 +05:30 [INF] Hosting environment: Development
+2025-02-08 17:20:00.503 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
+2025-02-08 17:21:09.419 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/ - null null
+2025-02-08 17:21:09.440 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-02-08 17:21:09.469 +05:30 [INF] Executing endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-08 17:21:09.484 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_MobileStockManagementApplication.Controllers.HomeController (MVC_MobileStockManagementApplication).
+2025-02-08 17:21:09.486 +05:30 [INF] login done and home page loaded
+2025-02-08 17:21:09.529 +05:30 [INF] Executing ViewResult, running view Index.
+2025-02-08 17:21:09.619 +05:30 [INF] Executed ViewResult - view Index executed in 97.9545ms.
+2025-02-08 17:21:09.622 +05:30 [INF] Executed action MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication) in 137.0897ms
+2025-02-08 17:21:09.623 +05:30 [INF] Executed endpoint 'MVC_MobileStockManagementApplication.Controllers.HomeController.Index (MVC_MobileStockManagementApplication)'
+2025-02-08 17:21:09.641 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/ - 200 null text/html; charset=utf-8 222.1075ms
+2025-02-08 17:21:09.645 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-08 17:21:09.645 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2025-02-08 17:21:09.647 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2025-02-08 17:21:09.649 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2025-02-08 17:21:09.650 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 4.9196ms
+2025-02-08 17:21:09.650 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2025-02-08 17:21:09.651 +05:30 [INF] The file /js/site.js was not modified
+2025-02-08 17:21:09.651 +05:30 [INF] The file /css/site.css was not modified
+2025-02-08 17:21:09.651 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 0.6768ms
+2025-02-08 17:21:09.651 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 6.2446ms
+2025-02-08 17:21:09.647 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.6964ms
+2025-02-08 17:21:09.665 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/jquery/dist/jquery.min.js - null null
+2025-02-08 17:21:09.668 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2025-02-08 17:21:09.668 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/jquery/dist/jquery.min.js - 304 null text/javascript 3.3613ms
+2025-02-08 17:21:09.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2025-02-08 17:21:09.669 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2025-02-08 17:21:09.669 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 0.4023ms
+2025-02-08 17:21:09.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - null null
+2025-02-08 17:21:09.669 +05:30 [INF] The file /MVC_MobileStockManagementApplication.styles.css was not modified
+2025-02-08 17:21:09.669 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5247/MVC_MobileStockManagementApplication.styles.css?v=57OcruMWi-F3vcjyA-pmUPvGrkXr5TXxufWpTKr4Dzc - 304 null text/css 0.2603ms
+2025-02-08 18:08:35.950 +05:30 [INF] User profile is available. Using 'C:\Users\vashundhara.krish\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-08 18:08:36.055 +05:30 [INF] Now listening on: http://localhost:5247
+2025-02-08 18:08:36.058 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-08 18:08:36.059 +05:30 [INF] Hosting environment: Development
+2025-02-08 18:08:36.059 +05:30 [INF] Content root path: C:\Users\vashundhara.krish\Desktop\Dotnet\MVC_MobileStockManagementApplication
